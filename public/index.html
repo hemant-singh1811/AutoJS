@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- <form> -->
+  <div id="but">
+    <button id="add" class="col-btn">Add Column</button>
+    <button id="del" class="col-btn">Delete Column</button>
+  </div>
+
+  <form action="/table" id="form" method="POST">
+
+    <div id="main" name="main">
+
+      <div class="di">Total colums :</div>
+      <div id="i" class="di"></div>
+      <input type="number" id="tcol" name="total" value="0" hidden>
+    </div>
+    <div id="cols">
+      <div id="table">
+        <label for="table_name">TABLE NAME</label>
+        <input type="text" name="table_name" id="table_name" placeholder="enter table name" required>
+      </div>
+      <div id="type"></div>
+      <div id="col"></div>
+
+    </div>
+    <!-- </form> -->
+    <br>
+    <button id="btn-reset" type="reset">Reset</button>
+    <br>
+    <button type="submit" id="btn">Create Table</button>
+  </form>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
